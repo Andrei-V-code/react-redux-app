@@ -1,0 +1,16 @@
+.ch_wrapper {
+  width: 100%;
+  min-height: 10vh;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  color: #540b0e;
+  text-transform: uppercase;
+  padding: 20px;
+}

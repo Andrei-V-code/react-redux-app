@@ -1,0 +1,94 @@
+.container_sort {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container_sort input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container_sort:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container_sort input:checked ~ .checkmark {
+  background-color: var(--orange);
+}
+
+.container_sort input:disabled ~ .checkmark {
+  background-color: #d3d3d3;
+}
+
+.container_sort input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container_sort .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container_sort {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container_sort {
+    font-size: 1rem;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container_sort {
+    font-size: 0.9rem;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container_sort {
+    font-size: 0.8rem;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container_sort {
+    font-size: 0.7rem;
+    padding-left: 30px;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}

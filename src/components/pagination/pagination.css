@@ -1,0 +1,32 @@
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.page {
+  padding: 0.8em 1em;
+  background-color: var(--gray);
+  border: none;
+  border-radius: var(--rounded);
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: solid var(--gray2) 3px;
+}
+
+.page:hover {
+  background-color: var(--gray2);
+  color: white;
+}
+
+.current-page {
+  background-color: var(--orange2);
+  color: white;
+  border: none;
+  border: solid var(--gray2) 3px;
+  border-radius: var(--rounded);
+}

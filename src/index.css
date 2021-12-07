@@ -1,0 +1,24 @@
+:root {
+  --gray: #b7b7a4;
+  --gray2: #a5a58d;
+  --orange: #f8961e;
+  --orange2: #f9844a;
+  --rounded: 8px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}

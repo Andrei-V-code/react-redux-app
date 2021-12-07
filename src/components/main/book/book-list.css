@@ -1,0 +1,40 @@
+.book_card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5em;
+  padding: 4em;
+  justify-items: center;
+}
+
+@media (min-width: 1280px) and (max-width: 1660px) {
+  .book_card_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .book_card_wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .book_card_wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .book_card_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .book_card_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
